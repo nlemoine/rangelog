@@ -43,9 +43,9 @@ function loadAkismetTrunkReadme(): string
     return $body;
 }
 
-function loadSampleThemeTrunkReadme(): string
+function loadSampleThemeReadme(): string
 {
-    $path = __DIR__ . '/../../Fixtures/wp/sample-theme-trunk-readme.txt';
+    $path = __DIR__ . '/../../Fixtures/wp/sample-theme-readme.txt';
     $body = file_get_contents($path);
     if ($body === false) {
         throw new LogicException("Missing fixture: {$path}");
@@ -259,13 +259,15 @@ it('emits warning before throwing UnsupportedPackageException on all-404', funct
 
     $warnings = array_values(array_filter(
         $logger->records,
-        fn (array $r): bool => $r['level'] === 'warning' && $r['message'] === 'All 6 SVN attempts returned 404 for {slug}',
+        fn (array $r): bool => $r['level'] === 'warning' && $r['message'] === 'All {count} SVN attempts returned 404 for {slug}',
     ));
     expect(count($warnings))->toBe(1);
     expect($warnings[0]['context']['slug'])->toBe('some-premium-plugin');
+    expect($warnings[0]['context']['count'])->toBe(6);
 });
 
 // Theme support: WordPressOrgResolver handles wp.org themes alongside plugins via SVN host switch.
+// Theme SVN layout is flat (<slug>/<version>/<file>) — there is no trunk/ or tags/ namespace.
 
 it('supports() returns true for a wp.org theme URL (no HTTP)', function (): void {
     [$mockClient, $resolver] = buildWpResolver();
@@ -285,7 +287,7 @@ it('supports() returns false for wordpress.org/news/ path', function (): void {
     expect(count($mockClient->getRequests()))->toBe(0);
 });
 
-it('resolve() returns Source(GITHUB_FILE) for theme when tags/{ver}/changelog.md returns 200 on attempt 1', function (): void {
+it('resolve() returns Source(GITHUB_FILE) for theme when <ver>/changelog.md returns 200 on attempt 1 (flat layout)', function (): void {
     [$mockClient, $resolver] = buildWpResolver();
     $mockClient->addResponse(new Response(200, [], '# Changelog'));
 
@@ -295,15 +297,14 @@ it('resolve() returns Source(GITHUB_FILE) for theme when tags/{ver}/changelog.md
     );
 
     expect($source->type)->toBe(SourceTypes::GITHUB_FILE);
-    expect($source->url)->toBe('https://themes.svn.wordpress.org/twentytwentyfour/tags/2.0.0/changelog.md');
+    expect($source->url)->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/changelog.md');
 });
 
-it('resolve() returns Source(WORDPRESS_ORG) for theme when trunk/readme.txt returns 200 on attempt 6', function (): void {
+it('resolve() returns Source(WORDPRESS_ORG) for theme when <ver>/readme.txt returns 200 on attempt 3 (flat layout, no trunk fallback)', function (): void {
     [$mockClient, $resolver] = buildWpResolver();
-    for ($i = 0; $i < 5; ++$i) {
-        $mockClient->addResponse(new Response(404, [], '404'));
-    }
-    $mockClient->addResponse(new Response(200, [], loadSampleThemeTrunkReadme()));
+    $mockClient->addResponse(new Response(404, [], '404'));
+    $mockClient->addResponse(new Response(404, [], '404'));
+    $mockClient->addResponse(new Response(200, [], loadSampleThemeReadme()));
 
     $source = $resolver->resolve(
         new Package('wpackagist-theme/twentytwentyfour', 'https://wordpress.org/themes/twentytwentyfour/'),
@@ -311,12 +312,12 @@ it('resolve() returns Source(WORDPRESS_ORG) for theme when trunk/readme.txt retu
     );
 
     expect($source->type)->toBe(SourceTypes::WORDPRESS_ORG);
-    expect($source->url)->toBe('https://themes.svn.wordpress.org/twentytwentyfour/trunk/readme.txt');
+    expect($source->url)->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/readme.txt');
 });
 
-it('resolve() walks all six theme attempts in correct order against themes.svn host', function (): void {
+it('resolve() walks all three theme attempts in correct order against themes.svn host (flat layout)', function (): void {
     [$mockClient, $resolver] = buildWpResolver();
-    for ($i = 0; $i < 6; ++$i) {
+    for ($i = 0; $i < 3; ++$i) {
         $mockClient->addResponse(new Response(404, [], '404'));
     }
 
@@ -330,18 +331,15 @@ it('resolve() walks all six theme attempts in correct order against themes.svn h
     }
 
     $requests = $mockClient->getRequests();
-    expect(count($requests))->toBe(6);
-    expect((string) $requests[0]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/tags/2.0.0/changelog.md');
-    expect((string) $requests[1]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/tags/2.0.0/CHANGELOG.md');
-    expect((string) $requests[2]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/tags/2.0.0/readme.txt');
-    expect((string) $requests[3]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/trunk/changelog.md');
-    expect((string) $requests[4]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/trunk/CHANGELOG.md');
-    expect((string) $requests[5]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/trunk/readme.txt');
+    expect(count($requests))->toBe(3);
+    expect((string) $requests[0]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/changelog.md');
+    expect((string) $requests[1]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/CHANGELOG.md');
+    expect((string) $requests[2]->getUri())->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/readme.txt');
 });
 
-it('resolve() throws UnsupportedPackageException on all-404 for theme URL (applies to both plugins and themes)', function (): void {
+it('resolve() throws UnsupportedPackageException on all-404 for theme URL (3-attempt walk)', function (): void {
     [$mockClient, $resolver] = buildWpResolver();
-    for ($i = 0; $i < 6; ++$i) {
+    for ($i = 0; $i < 3; ++$i) {
         $mockClient->addResponse(new Response(404, [], '404'));
     }
 
@@ -358,10 +356,10 @@ it('resolve() throws UnsupportedPackageException on all-404 for theme URL (appli
     expect($caught)->toBeInstanceOf(UnsupportedPackageException::class);
     /** @var UnsupportedPackageException $caught */
     expect($caught->getMessage())->toContain('twentytwentyfour');
-    // The exception must come AFTER the 6-attempt SVN walk, not from a
-    // short-circuit slug-extract failure. Pins that themes are walked
-    // through the same six-attempt mechanism as plugins.
-    expect(count($mockClient->getRequests()))->toBe(6);
+    // Exception must come AFTER the SVN walk, not from a short-circuit
+    // slug-extract failure. Pins the 3-attempt theme walk (themes have no
+    // trunk fallback, unlike plugins which walk 6 attempts).
+    expect(count($mockClient->getRequests()))->toBe(3);
 });
 
 it('emits info "Resolved WP package {slug} from {url}" with theme SVN host on resolved theme', function (): void {
@@ -384,4 +382,26 @@ it('emits info "Resolved WP package {slug} from {url}" with theme SVN host on re
     /** @var string $url */
     $url = $info[0]['context']['url'];
     expect($url)->toStartWith('https://themes.svn.wordpress.org/');
+});
+
+it('resolve() makes zero requests and throws UnsupportedPackageException for theme when VersionRange::to fails to normalize (no trunk fallback)', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    // No responses queued: the resolver must not perform any HTTP work for
+    // themes when there is no normalizable version, because themes have no
+    // trunk/ fallback the way plugins do.
+
+    $caught = null;
+    try {
+        $resolver->resolve(
+            new Package('wpackagist-theme/twentytwentyfour', 'https://wordpress.org/themes/twentytwentyfour/'),
+            VersionRange::changes('1.0.0', 'not-a-semver'),
+        );
+    } catch (UnsupportedPackageException $e) {
+        $caught = $e;
+    }
+
+    expect($caught)->toBeInstanceOf(UnsupportedPackageException::class);
+    /** @var UnsupportedPackageException $caught */
+    expect($caught->getMessage())->toContain('twentytwentyfour');
+    expect(count($mockClient->getRequests()))->toBe(0);
 });
