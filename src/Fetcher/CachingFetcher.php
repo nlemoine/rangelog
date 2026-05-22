@@ -86,7 +86,7 @@ final readonly class CachingFetcher implements FetcherInterface
 
     private function cacheKey(Source $source): string
     {
-        return \hash('sha256', 'fetcher|' . $source->type . '|' . $source->url);
+        return hash('sha256', 'fetcher|' . $source->type . '|' . $source->url);
     }
 
     private function loadFromCache(string $key): ?CachedResponse

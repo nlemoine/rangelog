@@ -22,7 +22,7 @@ final readonly class GitHubRepoUrl
 
     public static function fromUrl(string $url): ?self
     {
-        if (\preg_match('#^https?://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$#i', $url, $m) !== 1) {
+        if (preg_match('#^https?://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$#i', $url, $m) !== 1) {
             return null;
         }
 

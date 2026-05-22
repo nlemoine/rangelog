@@ -55,7 +55,7 @@ final class VersionBranchDeriver
             return [];
         }
 
-        if (\preg_match(self::VERSION_PATTERN, $version, $m) !== 1) {
+        if (preg_match(self::VERSION_PATTERN, $version, $m) !== 1) {
             return [];
         }
 
