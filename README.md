@@ -4,6 +4,7 @@ A PHP library that, given a `(name, sourceUrl)` pair and a version range, return
 
 [![Packagist Version](https://img.shields.io/packagist/v/n5s/rangelog.svg)](https://packagist.org/packages/n5s/rangelog)
 [![CI](https://github.com/nlemoine/rangelog/actions/workflows/ci.yml/badge.svg)](https://github.com/nlemoine/rangelog/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/nlemoine/rangelog/graph/badge.svg)](https://codecov.io/gh/nlemoine/rangelog)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Why

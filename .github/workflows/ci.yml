@@ -62,8 +62,17 @@ jobs:
         if: matrix.php != '8.3' || matrix.dependency-version != 'prefer-stable'
 
       - name: Run Pest with coverage
-        run: vendor/bin/pest --ci --coverage --min=0
+        run: vendor/bin/pest --ci --coverage --coverage-clover=coverage.xml --min=0
         if: matrix.php == '8.3' && matrix.dependency-version == 'prefer-stable'
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@cddd853df119a48c5be31a973f8cd97e12e35e16 # v6.0.1
+        if: matrix.php == '8.3' && matrix.dependency-version == 'prefer-stable'
+        with:
+          files: coverage.xml
+          fail_ci_if_error: false
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Type coverage
         run: vendor/bin/pest --type-coverage --min=95
