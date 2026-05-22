@@ -1,0 +1,77 @@
+{
+    "name": "n5s/rangelog",
+    "description": "Rangelog — resolve and parse changelog notes for any package across GitHub, WordPress.org, GitLab, and in-repo sources, over a `(from, to)` version range.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["changelog", "composer", "wordpress", "github", "psr-18"],
+    "authors": [
+        {
+            "name": "Nicolas Lemoine",
+            "email": "nico@n5s.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.3 || ^8.4 || ^8.5",
+        "composer/semver": "^3.4",
+        "league/commonmark": "^2.8",
+        "php-http/discovery": "^1.20",
+        "psr/cache": "^3.0",
+        "psr/http-client": "^1.0",
+        "psr/http-client-implementation": "*",
+        "psr/http-factory": "^1.1",
+        "psr/http-factory-implementation": "*",
+        "psr/http-message": "^2.0",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^3.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "nyholm/psr7": "^1.8",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-arch": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "^4.0",
+        "php-http/mock-client": "^1.6",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "rector/rector": "^2",
+        "symfony/http-client": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "n5s\\Rangelog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "n5s\\Rangelog\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "discovery": {
+            "psr/http-client-implementation": "Http\\Mock\\Client",
+            "psr/http-factory-implementation": "Nyholm\\Psr7\\Factory\\Psr17Factory"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test:coverage": "vendor/bin/pest --coverage",
+        "test:type-coverage": "vendor/bin/pest --type-coverage --min=95",
+        "stan": "vendor/bin/phpstan analyse --no-progress --memory-limit=512M",
+        "cs:check": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "vendor/bin/php-cs-fixer fix",
+        "rector:check": "vendor/bin/rector process --dry-run",
+        "rector:fix": "vendor/bin/rector process"
+    }
+}

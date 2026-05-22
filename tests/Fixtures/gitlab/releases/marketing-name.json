@@ -1,0 +1,13 @@
+[
+  {
+    "tag_name": "v3.6.1",
+    "name": "Public release 3.6.1",
+    "released_at": "2026-04-18T12:00:00.000Z",
+    "description": "Major release: see https://example.com/notes\n\n## Highlights\n- Item A\n- Item B",
+    "_links": {
+      "self": "https://gitlab.com/gitlab-org/release-cli/-/releases/v3.6.1",
+      "merge_requests_url": "https://gitlab.com/gitlab-org/release-cli/-/merge_requests?milestone_title=v3.6.1",
+      "issues_url": "https://gitlab.com/gitlab-org/release-cli/-/issues?milestone_title=v3.6.1"
+    }
+  }
+]

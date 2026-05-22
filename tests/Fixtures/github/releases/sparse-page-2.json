@@ -1,0 +1,802 @@
+[
+    {
+        "tag_name": "3.9.0",
+        "name": "3.9.0",
+        "body": "Release 3.9.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.8.0",
+        "name": "3.8.0",
+        "body": "Release 3.8.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.7.0",
+        "name": "3.7.0",
+        "body": "Release 3.7.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.6.0",
+        "name": "3.6.0",
+        "body": "Release 3.6.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.5.0",
+        "name": "3.5.0",
+        "body": "Release 3.5.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.4.0",
+        "name": "3.4.0",
+        "body": "Release 3.4.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.3.0",
+        "name": "3.3.0",
+        "body": "Release 3.3.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.2.0",
+        "name": "3.2.0",
+        "body": "Release 3.2.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.1.0",
+        "name": "3.1.0",
+        "body": "Release 3.1.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "3.0.0",
+        "name": "3.0.0",
+        "body": "Release 3.0.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.99.0",
+        "name": "2.99.0",
+        "body": "Release 2.99.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.98.0",
+        "name": "2.98.0",
+        "body": "Release 2.98.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.97.0",
+        "name": "2.97.0",
+        "body": "Release 2.97.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.96.0",
+        "name": "2.96.0",
+        "body": "Release 2.96.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.95.0",
+        "name": "2.95.0",
+        "body": "Release 2.95.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.94.0",
+        "name": "2.94.0",
+        "body": "Release 2.94.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.93.0",
+        "name": "2.93.0",
+        "body": "Release 2.93.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.92.0",
+        "name": "2.92.0",
+        "body": "Release 2.92.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.91.0",
+        "name": "2.91.0",
+        "body": "Release 2.91.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.90.0",
+        "name": "2.90.0",
+        "body": "Release 2.90.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.89.0",
+        "name": "2.89.0",
+        "body": "Release 2.89.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.88.0",
+        "name": "2.88.0",
+        "body": "Release 2.88.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.87.0",
+        "name": "2.87.0",
+        "body": "Release 2.87.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.86.0",
+        "name": "2.86.0",
+        "body": "Release 2.86.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.85.0",
+        "name": "2.85.0",
+        "body": "Release 2.85.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.84.0",
+        "name": "2.84.0",
+        "body": "Release 2.84.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.83.0",
+        "name": "2.83.0",
+        "body": "Release 2.83.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.82.0",
+        "name": "2.82.0",
+        "body": "Release 2.82.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.81.0",
+        "name": "2.81.0",
+        "body": "Release 2.81.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.80.0",
+        "name": "2.80.0",
+        "body": "Release 2.80.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.79.0",
+        "name": "2.79.0",
+        "body": "Release 2.79.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.78.0",
+        "name": "2.78.0",
+        "body": "Release 2.78.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.77.0",
+        "name": "2.77.0",
+        "body": "Release 2.77.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.76.0",
+        "name": "2.76.0",
+        "body": "Release 2.76.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.75.0",
+        "name": "2.75.0",
+        "body": "Release 2.75.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.74.0",
+        "name": "2.74.0",
+        "body": "Release 2.74.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.73.0",
+        "name": "2.73.0",
+        "body": "Release 2.73.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.72.0",
+        "name": "2.72.0",
+        "body": "Release 2.72.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.71.0",
+        "name": "2.71.0",
+        "body": "Release 2.71.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.70.0",
+        "name": "2.70.0",
+        "body": "Release 2.70.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.69.0",
+        "name": "2.69.0",
+        "body": "Release 2.69.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.68.0",
+        "name": "2.68.0",
+        "body": "Release 2.68.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.67.0",
+        "name": "2.67.0",
+        "body": "Release 2.67.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.66.0",
+        "name": "2.66.0",
+        "body": "Release 2.66.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.65.0",
+        "name": "2.65.0",
+        "body": "Release 2.65.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.64.0",
+        "name": "2.64.0",
+        "body": "Release 2.64.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.63.0",
+        "name": "2.63.0",
+        "body": "Release 2.63.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.62.0",
+        "name": "2.62.0",
+        "body": "Release 2.62.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.61.0",
+        "name": "2.61.0",
+        "body": "Release 2.61.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.60.0",
+        "name": "2.60.0",
+        "body": "Release 2.60.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.59.0",
+        "name": "2.59.0",
+        "body": "Release 2.59.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.58.0",
+        "name": "2.58.0",
+        "body": "Release 2.58.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.57.0",
+        "name": "2.57.0",
+        "body": "Release 2.57.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.56.0",
+        "name": "2.56.0",
+        "body": "Release 2.56.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.55.0",
+        "name": "2.55.0",
+        "body": "Release 2.55.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.54.0",
+        "name": "2.54.0",
+        "body": "Release 2.54.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.53.0",
+        "name": "2.53.0",
+        "body": "Release 2.53.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.52.0",
+        "name": "2.52.0",
+        "body": "Release 2.52.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.51.0",
+        "name": "2.51.0",
+        "body": "Release 2.51.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.50.0",
+        "name": "2.50.0",
+        "body": "Release 2.50.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.49.0",
+        "name": "2.49.0",
+        "body": "Release 2.49.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.48.0",
+        "name": "2.48.0",
+        "body": "Release 2.48.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.47.0",
+        "name": "2.47.0",
+        "body": "Release 2.47.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.46.0",
+        "name": "2.46.0",
+        "body": "Release 2.46.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.45.0",
+        "name": "2.45.0",
+        "body": "Release 2.45.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.44.0",
+        "name": "2.44.0",
+        "body": "Release 2.44.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.43.0",
+        "name": "2.43.0",
+        "body": "Release 2.43.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.42.0",
+        "name": "2.42.0",
+        "body": "Release 2.42.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.41.0",
+        "name": "2.41.0",
+        "body": "Release 2.41.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.40.0",
+        "name": "2.40.0",
+        "body": "Release 2.40.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.39.0",
+        "name": "2.39.0",
+        "body": "Release 2.39.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.38.0",
+        "name": "2.38.0",
+        "body": "Release 2.38.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.37.0",
+        "name": "2.37.0",
+        "body": "Release 2.37.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.36.0",
+        "name": "2.36.0",
+        "body": "Release 2.36.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.35.0",
+        "name": "2.35.0",
+        "body": "Release 2.35.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.34.0",
+        "name": "2.34.0",
+        "body": "Release 2.34.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.33.0",
+        "name": "2.33.0",
+        "body": "Release 2.33.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.32.0",
+        "name": "2.32.0",
+        "body": "Release 2.32.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.31.0",
+        "name": "2.31.0",
+        "body": "Release 2.31.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.30.0",
+        "name": "2.30.0",
+        "body": "Release 2.30.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.29.0",
+        "name": "2.29.0",
+        "body": "Release 2.29.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.28.0",
+        "name": "2.28.0",
+        "body": "Release 2.28.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.27.0",
+        "name": "2.27.0",
+        "body": "Release 2.27.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.26.0",
+        "name": "2.26.0",
+        "body": "Release 2.26.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.25.0",
+        "name": "2.25.0",
+        "body": "Release 2.25.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.24.0",
+        "name": "2.24.0",
+        "body": "Release 2.24.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.23.0",
+        "name": "2.23.0",
+        "body": "Release 2.23.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.22.0",
+        "name": "2.22.0",
+        "body": "Release 2.22.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.21.0",
+        "name": "2.21.0",
+        "body": "Release 2.21.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.20.0",
+        "name": "2.20.0",
+        "body": "Release 2.20.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.19.0",
+        "name": "2.19.0",
+        "body": "Release 2.19.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.18.0",
+        "name": "2.18.0",
+        "body": "Release 2.18.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.17.0",
+        "name": "2.17.0",
+        "body": "Release 2.17.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.16.0",
+        "name": "2.16.0",
+        "body": "Release 2.16.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.15.0",
+        "name": "2.15.0",
+        "body": "Release 2.15.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.14.0",
+        "name": "2.14.0",
+        "body": "Release 2.14.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.13.0",
+        "name": "2.13.0",
+        "body": "Release 2.13.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.12.0",
+        "name": "2.12.0",
+        "body": "Release 2.12.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.11.0",
+        "name": "2.11.0",
+        "body": "Release 2.11.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    },
+    {
+        "tag_name": "2.10.0",
+        "name": "2.10.0",
+        "body": "Release 2.10.0",
+        "published_at": "2025-01-01T00:00:00Z",
+        "draft": false,
+        "prerelease": false
+    }
+]

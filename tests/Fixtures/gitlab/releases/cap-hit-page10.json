@@ -1,0 +1,602 @@
+[
+    {
+        "tag_name": "v9.99.0",
+        "name": "cap-hit-project v9.99.0",
+        "released_at": "2026-03-16T12:00:00.000Z",
+        "description": "Release 9.99.0"
+    },
+    {
+        "tag_name": "v9.98.0",
+        "name": "cap-hit-project v9.98.0",
+        "released_at": "2026-03-15T12:00:00.000Z",
+        "description": "Release 9.98.0"
+    },
+    {
+        "tag_name": "v9.97.0",
+        "name": "cap-hit-project v9.97.0",
+        "released_at": "2026-03-14T12:00:00.000Z",
+        "description": "Release 9.97.0"
+    },
+    {
+        "tag_name": "v9.96.0",
+        "name": "cap-hit-project v9.96.0",
+        "released_at": "2026-03-13T12:00:00.000Z",
+        "description": "Release 9.96.0"
+    },
+    {
+        "tag_name": "v9.95.0",
+        "name": "cap-hit-project v9.95.0",
+        "released_at": "2026-03-12T12:00:00.000Z",
+        "description": "Release 9.95.0"
+    },
+    {
+        "tag_name": "v9.94.0",
+        "name": "cap-hit-project v9.94.0",
+        "released_at": "2026-03-11T12:00:00.000Z",
+        "description": "Release 9.94.0"
+    },
+    {
+        "tag_name": "v9.93.0",
+        "name": "cap-hit-project v9.93.0",
+        "released_at": "2026-03-10T12:00:00.000Z",
+        "description": "Release 9.93.0"
+    },
+    {
+        "tag_name": "v9.92.0",
+        "name": "cap-hit-project v9.92.0",
+        "released_at": "2026-03-09T12:00:00.000Z",
+        "description": "Release 9.92.0"
+    },
+    {
+        "tag_name": "v9.91.0",
+        "name": "cap-hit-project v9.91.0",
+        "released_at": "2026-03-08T12:00:00.000Z",
+        "description": "Release 9.91.0"
+    },
+    {
+        "tag_name": "v9.90.0",
+        "name": "cap-hit-project v9.90.0",
+        "released_at": "2026-03-07T12:00:00.000Z",
+        "description": "Release 9.90.0"
+    },
+    {
+        "tag_name": "v9.89.0",
+        "name": "cap-hit-project v9.89.0",
+        "released_at": "2026-03-06T12:00:00.000Z",
+        "description": "Release 9.89.0"
+    },
+    {
+        "tag_name": "v9.88.0",
+        "name": "cap-hit-project v9.88.0",
+        "released_at": "2026-03-05T12:00:00.000Z",
+        "description": "Release 9.88.0"
+    },
+    {
+        "tag_name": "v9.87.0",
+        "name": "cap-hit-project v9.87.0",
+        "released_at": "2026-03-04T12:00:00.000Z",
+        "description": "Release 9.87.0"
+    },
+    {
+        "tag_name": "v9.86.0",
+        "name": "cap-hit-project v9.86.0",
+        "released_at": "2026-03-03T12:00:00.000Z",
+        "description": "Release 9.86.0"
+    },
+    {
+        "tag_name": "v9.85.0",
+        "name": "cap-hit-project v9.85.0",
+        "released_at": "2026-03-02T12:00:00.000Z",
+        "description": "Release 9.85.0"
+    },
+    {
+        "tag_name": "v9.84.0",
+        "name": "cap-hit-project v9.84.0",
+        "released_at": "2026-03-01T12:00:00.000Z",
+        "description": "Release 9.84.0"
+    },
+    {
+        "tag_name": "v9.83.0",
+        "name": "cap-hit-project v9.83.0",
+        "released_at": "2026-03-28T12:00:00.000Z",
+        "description": "Release 9.83.0"
+    },
+    {
+        "tag_name": "v9.82.0",
+        "name": "cap-hit-project v9.82.0",
+        "released_at": "2026-03-27T12:00:00.000Z",
+        "description": "Release 9.82.0"
+    },
+    {
+        "tag_name": "v9.81.0",
+        "name": "cap-hit-project v9.81.0",
+        "released_at": "2026-03-26T12:00:00.000Z",
+        "description": "Release 9.81.0"
+    },
+    {
+        "tag_name": "v9.80.0",
+        "name": "cap-hit-project v9.80.0",
+        "released_at": "2026-03-25T12:00:00.000Z",
+        "description": "Release 9.80.0"
+    },
+    {
+        "tag_name": "v9.79.0",
+        "name": "cap-hit-project v9.79.0",
+        "released_at": "2026-03-24T12:00:00.000Z",
+        "description": "Release 9.79.0"
+    },
+    {
+        "tag_name": "v9.78.0",
+        "name": "cap-hit-project v9.78.0",
+        "released_at": "2026-03-23T12:00:00.000Z",
+        "description": "Release 9.78.0"
+    },
+    {
+        "tag_name": "v9.77.0",
+        "name": "cap-hit-project v9.77.0",
+        "released_at": "2026-03-22T12:00:00.000Z",
+        "description": "Release 9.77.0"
+    },
+    {
+        "tag_name": "v9.76.0",
+        "name": "cap-hit-project v9.76.0",
+        "released_at": "2026-03-21T12:00:00.000Z",
+        "description": "Release 9.76.0"
+    },
+    {
+        "tag_name": "v9.75.0",
+        "name": "cap-hit-project v9.75.0",
+        "released_at": "2026-03-20T12:00:00.000Z",
+        "description": "Release 9.75.0"
+    },
+    {
+        "tag_name": "v9.74.0",
+        "name": "cap-hit-project v9.74.0",
+        "released_at": "2026-03-19T12:00:00.000Z",
+        "description": "Release 9.74.0"
+    },
+    {
+        "tag_name": "v9.73.0",
+        "name": "cap-hit-project v9.73.0",
+        "released_at": "2026-03-18T12:00:00.000Z",
+        "description": "Release 9.73.0"
+    },
+    {
+        "tag_name": "v9.72.0",
+        "name": "cap-hit-project v9.72.0",
+        "released_at": "2026-03-17T12:00:00.000Z",
+        "description": "Release 9.72.0"
+    },
+    {
+        "tag_name": "v9.71.0",
+        "name": "cap-hit-project v9.71.0",
+        "released_at": "2026-03-16T12:00:00.000Z",
+        "description": "Release 9.71.0"
+    },
+    {
+        "tag_name": "v9.70.0",
+        "name": "cap-hit-project v9.70.0",
+        "released_at": "2026-03-15T12:00:00.000Z",
+        "description": "Release 9.70.0"
+    },
+    {
+        "tag_name": "v9.69.0",
+        "name": "cap-hit-project v9.69.0",
+        "released_at": "2026-03-14T12:00:00.000Z",
+        "description": "Release 9.69.0"
+    },
+    {
+        "tag_name": "v9.68.0",
+        "name": "cap-hit-project v9.68.0",
+        "released_at": "2026-03-13T12:00:00.000Z",
+        "description": "Release 9.68.0"
+    },
+    {
+        "tag_name": "v9.67.0",
+        "name": "cap-hit-project v9.67.0",
+        "released_at": "2026-03-12T12:00:00.000Z",
+        "description": "Release 9.67.0"
+    },
+    {
+        "tag_name": "v9.66.0",
+        "name": "cap-hit-project v9.66.0",
+        "released_at": "2026-03-11T12:00:00.000Z",
+        "description": "Release 9.66.0"
+    },
+    {
+        "tag_name": "v9.65.0",
+        "name": "cap-hit-project v9.65.0",
+        "released_at": "2026-03-10T12:00:00.000Z",
+        "description": "Release 9.65.0"
+    },
+    {
+        "tag_name": "v9.64.0",
+        "name": "cap-hit-project v9.64.0",
+        "released_at": "2026-03-09T12:00:00.000Z",
+        "description": "Release 9.64.0"
+    },
+    {
+        "tag_name": "v9.63.0",
+        "name": "cap-hit-project v9.63.0",
+        "released_at": "2026-03-08T12:00:00.000Z",
+        "description": "Release 9.63.0"
+    },
+    {
+        "tag_name": "v9.62.0",
+        "name": "cap-hit-project v9.62.0",
+        "released_at": "2026-03-07T12:00:00.000Z",
+        "description": "Release 9.62.0"
+    },
+    {
+        "tag_name": "v9.61.0",
+        "name": "cap-hit-project v9.61.0",
+        "released_at": "2026-03-06T12:00:00.000Z",
+        "description": "Release 9.61.0"
+    },
+    {
+        "tag_name": "v9.60.0",
+        "name": "cap-hit-project v9.60.0",
+        "released_at": "2026-03-05T12:00:00.000Z",
+        "description": "Release 9.60.0"
+    },
+    {
+        "tag_name": "v9.59.0",
+        "name": "cap-hit-project v9.59.0",
+        "released_at": "2026-03-04T12:00:00.000Z",
+        "description": "Release 9.59.0"
+    },
+    {
+        "tag_name": "v9.58.0",
+        "name": "cap-hit-project v9.58.0",
+        "released_at": "2026-03-03T12:00:00.000Z",
+        "description": "Release 9.58.0"
+    },
+    {
+        "tag_name": "v9.57.0",
+        "name": "cap-hit-project v9.57.0",
+        "released_at": "2026-03-02T12:00:00.000Z",
+        "description": "Release 9.57.0"
+    },
+    {
+        "tag_name": "v9.56.0",
+        "name": "cap-hit-project v9.56.0",
+        "released_at": "2026-03-01T12:00:00.000Z",
+        "description": "Release 9.56.0"
+    },
+    {
+        "tag_name": "v9.55.0",
+        "name": "cap-hit-project v9.55.0",
+        "released_at": "2026-03-28T12:00:00.000Z",
+        "description": "Release 9.55.0"
+    },
+    {
+        "tag_name": "v9.54.0",
+        "name": "cap-hit-project v9.54.0",
+        "released_at": "2026-03-27T12:00:00.000Z",
+        "description": "Release 9.54.0"
+    },
+    {
+        "tag_name": "v9.53.0",
+        "name": "cap-hit-project v9.53.0",
+        "released_at": "2026-03-26T12:00:00.000Z",
+        "description": "Release 9.53.0"
+    },
+    {
+        "tag_name": "v9.52.0",
+        "name": "cap-hit-project v9.52.0",
+        "released_at": "2026-03-25T12:00:00.000Z",
+        "description": "Release 9.52.0"
+    },
+    {
+        "tag_name": "v9.51.0",
+        "name": "cap-hit-project v9.51.0",
+        "released_at": "2026-03-24T12:00:00.000Z",
+        "description": "Release 9.51.0"
+    },
+    {
+        "tag_name": "v9.50.0",
+        "name": "cap-hit-project v9.50.0",
+        "released_at": "2026-03-23T12:00:00.000Z",
+        "description": "Release 9.50.0"
+    },
+    {
+        "tag_name": "v9.49.0",
+        "name": "cap-hit-project v9.49.0",
+        "released_at": "2026-03-22T12:00:00.000Z",
+        "description": "Release 9.49.0"
+    },
+    {
+        "tag_name": "v9.48.0",
+        "name": "cap-hit-project v9.48.0",
+        "released_at": "2026-03-21T12:00:00.000Z",
+        "description": "Release 9.48.0"
+    },
+    {
+        "tag_name": "v9.47.0",
+        "name": "cap-hit-project v9.47.0",
+        "released_at": "2026-03-20T12:00:00.000Z",
+        "description": "Release 9.47.0"
+    },
+    {
+        "tag_name": "v9.46.0",
+        "name": "cap-hit-project v9.46.0",
+        "released_at": "2026-03-19T12:00:00.000Z",
+        "description": "Release 9.46.0"
+    },
+    {
+        "tag_name": "v9.45.0",
+        "name": "cap-hit-project v9.45.0",
+        "released_at": "2026-03-18T12:00:00.000Z",
+        "description": "Release 9.45.0"
+    },
+    {
+        "tag_name": "v9.44.0",
+        "name": "cap-hit-project v9.44.0",
+        "released_at": "2026-03-17T12:00:00.000Z",
+        "description": "Release 9.44.0"
+    },
+    {
+        "tag_name": "v9.43.0",
+        "name": "cap-hit-project v9.43.0",
+        "released_at": "2026-03-16T12:00:00.000Z",
+        "description": "Release 9.43.0"
+    },
+    {
+        "tag_name": "v9.42.0",
+        "name": "cap-hit-project v9.42.0",
+        "released_at": "2026-03-15T12:00:00.000Z",
+        "description": "Release 9.42.0"
+    },
+    {
+        "tag_name": "v9.41.0",
+        "name": "cap-hit-project v9.41.0",
+        "released_at": "2026-03-14T12:00:00.000Z",
+        "description": "Release 9.41.0"
+    },
+    {
+        "tag_name": "v9.40.0",
+        "name": "cap-hit-project v9.40.0",
+        "released_at": "2026-03-13T12:00:00.000Z",
+        "description": "Release 9.40.0"
+    },
+    {
+        "tag_name": "v9.39.0",
+        "name": "cap-hit-project v9.39.0",
+        "released_at": "2026-03-12T12:00:00.000Z",
+        "description": "Release 9.39.0"
+    },
+    {
+        "tag_name": "v9.38.0",
+        "name": "cap-hit-project v9.38.0",
+        "released_at": "2026-03-11T12:00:00.000Z",
+        "description": "Release 9.38.0"
+    },
+    {
+        "tag_name": "v9.37.0",
+        "name": "cap-hit-project v9.37.0",
+        "released_at": "2026-03-10T12:00:00.000Z",
+        "description": "Release 9.37.0"
+    },
+    {
+        "tag_name": "v9.36.0",
+        "name": "cap-hit-project v9.36.0",
+        "released_at": "2026-03-09T12:00:00.000Z",
+        "description": "Release 9.36.0"
+    },
+    {
+        "tag_name": "v9.35.0",
+        "name": "cap-hit-project v9.35.0",
+        "released_at": "2026-03-08T12:00:00.000Z",
+        "description": "Release 9.35.0"
+    },
+    {
+        "tag_name": "v9.34.0",
+        "name": "cap-hit-project v9.34.0",
+        "released_at": "2026-03-07T12:00:00.000Z",
+        "description": "Release 9.34.0"
+    },
+    {
+        "tag_name": "v9.33.0",
+        "name": "cap-hit-project v9.33.0",
+        "released_at": "2026-03-06T12:00:00.000Z",
+        "description": "Release 9.33.0"
+    },
+    {
+        "tag_name": "v9.32.0",
+        "name": "cap-hit-project v9.32.0",
+        "released_at": "2026-03-05T12:00:00.000Z",
+        "description": "Release 9.32.0"
+    },
+    {
+        "tag_name": "v9.31.0",
+        "name": "cap-hit-project v9.31.0",
+        "released_at": "2026-03-04T12:00:00.000Z",
+        "description": "Release 9.31.0"
+    },
+    {
+        "tag_name": "v9.30.0",
+        "name": "cap-hit-project v9.30.0",
+        "released_at": "2026-03-03T12:00:00.000Z",
+        "description": "Release 9.30.0"
+    },
+    {
+        "tag_name": "v9.29.0",
+        "name": "cap-hit-project v9.29.0",
+        "released_at": "2026-03-02T12:00:00.000Z",
+        "description": "Release 9.29.0"
+    },
+    {
+        "tag_name": "v9.28.0",
+        "name": "cap-hit-project v9.28.0",
+        "released_at": "2026-03-01T12:00:00.000Z",
+        "description": "Release 9.28.0"
+    },
+    {
+        "tag_name": "v9.27.0",
+        "name": "cap-hit-project v9.27.0",
+        "released_at": "2026-03-28T12:00:00.000Z",
+        "description": "Release 9.27.0"
+    },
+    {
+        "tag_name": "v9.26.0",
+        "name": "cap-hit-project v9.26.0",
+        "released_at": "2026-03-27T12:00:00.000Z",
+        "description": "Release 9.26.0"
+    },
+    {
+        "tag_name": "v9.25.0",
+        "name": "cap-hit-project v9.25.0",
+        "released_at": "2026-03-26T12:00:00.000Z",
+        "description": "Release 9.25.0"
+    },
+    {
+        "tag_name": "v9.24.0",
+        "name": "cap-hit-project v9.24.0",
+        "released_at": "2026-03-25T12:00:00.000Z",
+        "description": "Release 9.24.0"
+    },
+    {
+        "tag_name": "v9.23.0",
+        "name": "cap-hit-project v9.23.0",
+        "released_at": "2026-03-24T12:00:00.000Z",
+        "description": "Release 9.23.0"
+    },
+    {
+        "tag_name": "v9.22.0",
+        "name": "cap-hit-project v9.22.0",
+        "released_at": "2026-03-23T12:00:00.000Z",
+        "description": "Release 9.22.0"
+    },
+    {
+        "tag_name": "v9.21.0",
+        "name": "cap-hit-project v9.21.0",
+        "released_at": "2026-03-22T12:00:00.000Z",
+        "description": "Release 9.21.0"
+    },
+    {
+        "tag_name": "v9.20.0",
+        "name": "cap-hit-project v9.20.0",
+        "released_at": "2026-03-21T12:00:00.000Z",
+        "description": "Release 9.20.0"
+    },
+    {
+        "tag_name": "v9.19.0",
+        "name": "cap-hit-project v9.19.0",
+        "released_at": "2026-03-20T12:00:00.000Z",
+        "description": "Release 9.19.0"
+    },
+    {
+        "tag_name": "v9.18.0",
+        "name": "cap-hit-project v9.18.0",
+        "released_at": "2026-03-19T12:00:00.000Z",
+        "description": "Release 9.18.0"
+    },
+    {
+        "tag_name": "v9.17.0",
+        "name": "cap-hit-project v9.17.0",
+        "released_at": "2026-03-18T12:00:00.000Z",
+        "description": "Release 9.17.0"
+    },
+    {
+        "tag_name": "v9.16.0",
+        "name": "cap-hit-project v9.16.0",
+        "released_at": "2026-03-17T12:00:00.000Z",
+        "description": "Release 9.16.0"
+    },
+    {
+        "tag_name": "v9.15.0",
+        "name": "cap-hit-project v9.15.0",
+        "released_at": "2026-03-16T12:00:00.000Z",
+        "description": "Release 9.15.0"
+    },
+    {
+        "tag_name": "v9.14.0",
+        "name": "cap-hit-project v9.14.0",
+        "released_at": "2026-03-15T12:00:00.000Z",
+        "description": "Release 9.14.0"
+    },
+    {
+        "tag_name": "v9.13.0",
+        "name": "cap-hit-project v9.13.0",
+        "released_at": "2026-03-14T12:00:00.000Z",
+        "description": "Release 9.13.0"
+    },
+    {
+        "tag_name": "v9.12.0",
+        "name": "cap-hit-project v9.12.0",
+        "released_at": "2026-03-13T12:00:00.000Z",
+        "description": "Release 9.12.0"
+    },
+    {
+        "tag_name": "v9.11.0",
+        "name": "cap-hit-project v9.11.0",
+        "released_at": "2026-03-12T12:00:00.000Z",
+        "description": "Release 9.11.0"
+    },
+    {
+        "tag_name": "v9.10.0",
+        "name": "cap-hit-project v9.10.0",
+        "released_at": "2026-03-11T12:00:00.000Z",
+        "description": "Release 9.10.0"
+    },
+    {
+        "tag_name": "v9.9.0",
+        "name": "cap-hit-project v9.9.0",
+        "released_at": "2026-03-10T12:00:00.000Z",
+        "description": "Release 9.9.0"
+    },
+    {
+        "tag_name": "v9.8.0",
+        "name": "cap-hit-project v9.8.0",
+        "released_at": "2026-03-09T12:00:00.000Z",
+        "description": "Release 9.8.0"
+    },
+    {
+        "tag_name": "v9.7.0",
+        "name": "cap-hit-project v9.7.0",
+        "released_at": "2026-03-08T12:00:00.000Z",
+        "description": "Release 9.7.0"
+    },
+    {
+        "tag_name": "v9.6.0",
+        "name": "cap-hit-project v9.6.0",
+        "released_at": "2026-03-07T12:00:00.000Z",
+        "description": "Release 9.6.0"
+    },
+    {
+        "tag_name": "v9.5.0",
+        "name": "cap-hit-project v9.5.0",
+        "released_at": "2026-03-06T12:00:00.000Z",
+        "description": "Release 9.5.0"
+    },
+    {
+        "tag_name": "v9.4.0",
+        "name": "cap-hit-project v9.4.0",
+        "released_at": "2026-03-05T12:00:00.000Z",
+        "description": "Release 9.4.0"
+    },
+    {
+        "tag_name": "v9.3.0",
+        "name": "cap-hit-project v9.3.0",
+        "released_at": "2026-03-04T12:00:00.000Z",
+        "description": "Release 9.3.0"
+    },
+    {
+        "tag_name": "v9.2.0",
+        "name": "cap-hit-project v9.2.0",
+        "released_at": "2026-03-03T12:00:00.000Z",
+        "description": "Release 9.2.0"
+    },
+    {
+        "tag_name": "v9.1.0",
+        "name": "cap-hit-project v9.1.0",
+        "released_at": "2026-03-02T12:00:00.000Z",
+        "description": "Release 9.1.0"
+    },
+    {
+        "tag_name": "v9.0.0",
+        "name": "cap-hit-project v9.0.0",
+        "released_at": "2026-03-01T12:00:00.000Z",
+        "description": "Release 9.0.0"
+    }
+]

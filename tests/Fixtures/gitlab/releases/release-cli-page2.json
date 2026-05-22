@@ -1,0 +1,20 @@
+[
+    {
+        "tag_name": "v0.0.3",
+        "name": "release-cli v0.0.3",
+        "released_at": "2026-01-03T12:00:00.000Z",
+        "description": "Release 0.0.3"
+    },
+    {
+        "tag_name": "v0.0.2",
+        "name": "release-cli v0.0.2",
+        "released_at": "2026-01-02T12:00:00.000Z",
+        "description": "Release 0.0.2"
+    },
+    {
+        "tag_name": "v0.0.1",
+        "name": "release-cli v0.0.1",
+        "released_at": "2026-01-01T12:00:00.000Z",
+        "description": "Release 0.0.1"
+    }
+]

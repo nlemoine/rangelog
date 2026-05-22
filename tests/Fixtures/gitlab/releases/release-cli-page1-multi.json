@@ -1,0 +1,602 @@
+[
+    {
+        "tag_name": "v0.100.0",
+        "name": "release-cli v0.100.0",
+        "released_at": "2026-04-17T12:00:00.000Z",
+        "description": "Release 100"
+    },
+    {
+        "tag_name": "v0.99.0",
+        "name": "release-cli v0.99.0",
+        "released_at": "2026-04-16T12:00:00.000Z",
+        "description": "Release 99"
+    },
+    {
+        "tag_name": "v0.98.0",
+        "name": "release-cli v0.98.0",
+        "released_at": "2026-04-15T12:00:00.000Z",
+        "description": "Release 98"
+    },
+    {
+        "tag_name": "v0.97.0",
+        "name": "release-cli v0.97.0",
+        "released_at": "2026-04-14T12:00:00.000Z",
+        "description": "Release 97"
+    },
+    {
+        "tag_name": "v0.96.0",
+        "name": "release-cli v0.96.0",
+        "released_at": "2026-04-13T12:00:00.000Z",
+        "description": "Release 96"
+    },
+    {
+        "tag_name": "v0.95.0",
+        "name": "release-cli v0.95.0",
+        "released_at": "2026-04-12T12:00:00.000Z",
+        "description": "Release 95"
+    },
+    {
+        "tag_name": "v0.94.0",
+        "name": "release-cli v0.94.0",
+        "released_at": "2026-04-11T12:00:00.000Z",
+        "description": "Release 94"
+    },
+    {
+        "tag_name": "v0.93.0",
+        "name": "release-cli v0.93.0",
+        "released_at": "2026-04-10T12:00:00.000Z",
+        "description": "Release 93"
+    },
+    {
+        "tag_name": "v0.92.0",
+        "name": "release-cli v0.92.0",
+        "released_at": "2026-04-09T12:00:00.000Z",
+        "description": "Release 92"
+    },
+    {
+        "tag_name": "v0.91.0",
+        "name": "release-cli v0.91.0",
+        "released_at": "2026-04-08T12:00:00.000Z",
+        "description": "Release 91"
+    },
+    {
+        "tag_name": "v0.90.0",
+        "name": "release-cli v0.90.0",
+        "released_at": "2026-04-07T12:00:00.000Z",
+        "description": "Release 90"
+    },
+    {
+        "tag_name": "v0.89.0",
+        "name": "release-cli v0.89.0",
+        "released_at": "2026-04-06T12:00:00.000Z",
+        "description": "Release 89"
+    },
+    {
+        "tag_name": "v0.88.0",
+        "name": "release-cli v0.88.0",
+        "released_at": "2026-04-05T12:00:00.000Z",
+        "description": "Release 88"
+    },
+    {
+        "tag_name": "v0.87.0",
+        "name": "release-cli v0.87.0",
+        "released_at": "2026-04-04T12:00:00.000Z",
+        "description": "Release 87"
+    },
+    {
+        "tag_name": "v0.86.0",
+        "name": "release-cli v0.86.0",
+        "released_at": "2026-04-03T12:00:00.000Z",
+        "description": "Release 86"
+    },
+    {
+        "tag_name": "v0.85.0",
+        "name": "release-cli v0.85.0",
+        "released_at": "2026-04-02T12:00:00.000Z",
+        "description": "Release 85"
+    },
+    {
+        "tag_name": "v0.84.0",
+        "name": "release-cli v0.84.0",
+        "released_at": "2026-04-01T12:00:00.000Z",
+        "description": "Release 84"
+    },
+    {
+        "tag_name": "v0.83.0",
+        "name": "release-cli v0.83.0",
+        "released_at": "2026-04-28T12:00:00.000Z",
+        "description": "Release 83"
+    },
+    {
+        "tag_name": "v0.82.0",
+        "name": "release-cli v0.82.0",
+        "released_at": "2026-04-27T12:00:00.000Z",
+        "description": "Release 82"
+    },
+    {
+        "tag_name": "v0.81.0",
+        "name": "release-cli v0.81.0",
+        "released_at": "2026-04-26T12:00:00.000Z",
+        "description": "Release 81"
+    },
+    {
+        "tag_name": "v0.80.0",
+        "name": "release-cli v0.80.0",
+        "released_at": "2026-04-25T12:00:00.000Z",
+        "description": "Release 80"
+    },
+    {
+        "tag_name": "v0.79.0",
+        "name": "release-cli v0.79.0",
+        "released_at": "2026-04-24T12:00:00.000Z",
+        "description": "Release 79"
+    },
+    {
+        "tag_name": "v0.78.0",
+        "name": "release-cli v0.78.0",
+        "released_at": "2026-04-23T12:00:00.000Z",
+        "description": "Release 78"
+    },
+    {
+        "tag_name": "v0.77.0",
+        "name": "release-cli v0.77.0",
+        "released_at": "2026-04-22T12:00:00.000Z",
+        "description": "Release 77"
+    },
+    {
+        "tag_name": "v0.76.0",
+        "name": "release-cli v0.76.0",
+        "released_at": "2026-04-21T12:00:00.000Z",
+        "description": "Release 76"
+    },
+    {
+        "tag_name": "v0.75.0",
+        "name": "release-cli v0.75.0",
+        "released_at": "2026-04-20T12:00:00.000Z",
+        "description": "Release 75"
+    },
+    {
+        "tag_name": "v0.74.0",
+        "name": "release-cli v0.74.0",
+        "released_at": "2026-04-19T12:00:00.000Z",
+        "description": "Release 74"
+    },
+    {
+        "tag_name": "v0.73.0",
+        "name": "release-cli v0.73.0",
+        "released_at": "2026-04-18T12:00:00.000Z",
+        "description": "Release 73"
+    },
+    {
+        "tag_name": "v0.72.0",
+        "name": "release-cli v0.72.0",
+        "released_at": "2026-04-17T12:00:00.000Z",
+        "description": "Release 72"
+    },
+    {
+        "tag_name": "v0.71.0",
+        "name": "release-cli v0.71.0",
+        "released_at": "2026-04-16T12:00:00.000Z",
+        "description": "Release 71"
+    },
+    {
+        "tag_name": "v0.70.0",
+        "name": "release-cli v0.70.0",
+        "released_at": "2026-04-15T12:00:00.000Z",
+        "description": "Release 70"
+    },
+    {
+        "tag_name": "v0.69.0",
+        "name": "release-cli v0.69.0",
+        "released_at": "2026-04-14T12:00:00.000Z",
+        "description": "Release 69"
+    },
+    {
+        "tag_name": "v0.68.0",
+        "name": "release-cli v0.68.0",
+        "released_at": "2026-04-13T12:00:00.000Z",
+        "description": "Release 68"
+    },
+    {
+        "tag_name": "v0.67.0",
+        "name": "release-cli v0.67.0",
+        "released_at": "2026-04-12T12:00:00.000Z",
+        "description": "Release 67"
+    },
+    {
+        "tag_name": "v0.66.0",
+        "name": "release-cli v0.66.0",
+        "released_at": "2026-04-11T12:00:00.000Z",
+        "description": "Release 66"
+    },
+    {
+        "tag_name": "v0.65.0",
+        "name": "release-cli v0.65.0",
+        "released_at": "2026-04-10T12:00:00.000Z",
+        "description": "Release 65"
+    },
+    {
+        "tag_name": "v0.64.0",
+        "name": "release-cli v0.64.0",
+        "released_at": "2026-04-09T12:00:00.000Z",
+        "description": "Release 64"
+    },
+    {
+        "tag_name": "v0.63.0",
+        "name": "release-cli v0.63.0",
+        "released_at": "2026-04-08T12:00:00.000Z",
+        "description": "Release 63"
+    },
+    {
+        "tag_name": "v0.62.0",
+        "name": "release-cli v0.62.0",
+        "released_at": "2026-04-07T12:00:00.000Z",
+        "description": "Release 62"
+    },
+    {
+        "tag_name": "v0.61.0",
+        "name": "release-cli v0.61.0",
+        "released_at": "2026-04-06T12:00:00.000Z",
+        "description": "Release 61"
+    },
+    {
+        "tag_name": "v0.60.0",
+        "name": "release-cli v0.60.0",
+        "released_at": "2026-04-05T12:00:00.000Z",
+        "description": "Release 60"
+    },
+    {
+        "tag_name": "v0.59.0",
+        "name": "release-cli v0.59.0",
+        "released_at": "2026-04-04T12:00:00.000Z",
+        "description": "Release 59"
+    },
+    {
+        "tag_name": "v0.58.0",
+        "name": "release-cli v0.58.0",
+        "released_at": "2026-04-03T12:00:00.000Z",
+        "description": "Release 58"
+    },
+    {
+        "tag_name": "v0.57.0",
+        "name": "release-cli v0.57.0",
+        "released_at": "2026-04-02T12:00:00.000Z",
+        "description": "Release 57"
+    },
+    {
+        "tag_name": "v0.56.0",
+        "name": "release-cli v0.56.0",
+        "released_at": "2026-04-01T12:00:00.000Z",
+        "description": "Release 56"
+    },
+    {
+        "tag_name": "v0.55.0",
+        "name": "release-cli v0.55.0",
+        "released_at": "2026-04-28T12:00:00.000Z",
+        "description": "Release 55"
+    },
+    {
+        "tag_name": "v0.54.0",
+        "name": "release-cli v0.54.0",
+        "released_at": "2026-04-27T12:00:00.000Z",
+        "description": "Release 54"
+    },
+    {
+        "tag_name": "v0.53.0",
+        "name": "release-cli v0.53.0",
+        "released_at": "2026-04-26T12:00:00.000Z",
+        "description": "Release 53"
+    },
+    {
+        "tag_name": "v0.52.0",
+        "name": "release-cli v0.52.0",
+        "released_at": "2026-04-25T12:00:00.000Z",
+        "description": "Release 52"
+    },
+    {
+        "tag_name": "v0.51.0",
+        "name": "release-cli v0.51.0",
+        "released_at": "2026-04-24T12:00:00.000Z",
+        "description": "Release 51"
+    },
+    {
+        "tag_name": "v0.50.0",
+        "name": "release-cli v0.50.0",
+        "released_at": "2026-04-23T12:00:00.000Z",
+        "description": "Release 50"
+    },
+    {
+        "tag_name": "v0.49.0",
+        "name": "release-cli v0.49.0",
+        "released_at": "2026-04-22T12:00:00.000Z",
+        "description": "Release 49"
+    },
+    {
+        "tag_name": "v0.48.0",
+        "name": "release-cli v0.48.0",
+        "released_at": "2026-04-21T12:00:00.000Z",
+        "description": "Release 48"
+    },
+    {
+        "tag_name": "v0.47.0",
+        "name": "release-cli v0.47.0",
+        "released_at": "2026-04-20T12:00:00.000Z",
+        "description": "Release 47"
+    },
+    {
+        "tag_name": "v0.46.0",
+        "name": "release-cli v0.46.0",
+        "released_at": "2026-04-19T12:00:00.000Z",
+        "description": "Release 46"
+    },
+    {
+        "tag_name": "v0.45.0",
+        "name": "release-cli v0.45.0",
+        "released_at": "2026-04-18T12:00:00.000Z",
+        "description": "Release 45"
+    },
+    {
+        "tag_name": "v0.44.0",
+        "name": "release-cli v0.44.0",
+        "released_at": "2026-04-17T12:00:00.000Z",
+        "description": "Release 44"
+    },
+    {
+        "tag_name": "v0.43.0",
+        "name": "release-cli v0.43.0",
+        "released_at": "2026-04-16T12:00:00.000Z",
+        "description": "Release 43"
+    },
+    {
+        "tag_name": "v0.42.0",
+        "name": "release-cli v0.42.0",
+        "released_at": "2026-04-15T12:00:00.000Z",
+        "description": "Release 42"
+    },
+    {
+        "tag_name": "v0.41.0",
+        "name": "release-cli v0.41.0",
+        "released_at": "2026-04-14T12:00:00.000Z",
+        "description": "Release 41"
+    },
+    {
+        "tag_name": "v0.40.0",
+        "name": "release-cli v0.40.0",
+        "released_at": "2026-04-13T12:00:00.000Z",
+        "description": "Release 40"
+    },
+    {
+        "tag_name": "v0.39.0",
+        "name": "release-cli v0.39.0",
+        "released_at": "2026-04-12T12:00:00.000Z",
+        "description": "Release 39"
+    },
+    {
+        "tag_name": "v0.38.0",
+        "name": "release-cli v0.38.0",
+        "released_at": "2026-04-11T12:00:00.000Z",
+        "description": "Release 38"
+    },
+    {
+        "tag_name": "v0.37.0",
+        "name": "release-cli v0.37.0",
+        "released_at": "2026-04-10T12:00:00.000Z",
+        "description": "Release 37"
+    },
+    {
+        "tag_name": "v0.36.0",
+        "name": "release-cli v0.36.0",
+        "released_at": "2026-04-09T12:00:00.000Z",
+        "description": "Release 36"
+    },
+    {
+        "tag_name": "v0.35.0",
+        "name": "release-cli v0.35.0",
+        "released_at": "2026-04-08T12:00:00.000Z",
+        "description": "Release 35"
+    },
+    {
+        "tag_name": "v0.34.0",
+        "name": "release-cli v0.34.0",
+        "released_at": "2026-04-07T12:00:00.000Z",
+        "description": "Release 34"
+    },
+    {
+        "tag_name": "v0.33.0",
+        "name": "release-cli v0.33.0",
+        "released_at": "2026-04-06T12:00:00.000Z",
+        "description": "Release 33"
+    },
+    {
+        "tag_name": "v0.32.0",
+        "name": "release-cli v0.32.0",
+        "released_at": "2026-04-05T12:00:00.000Z",
+        "description": "Release 32"
+    },
+    {
+        "tag_name": "v0.31.0",
+        "name": "release-cli v0.31.0",
+        "released_at": "2026-04-04T12:00:00.000Z",
+        "description": "Release 31"
+    },
+    {
+        "tag_name": "v0.30.0",
+        "name": "release-cli v0.30.0",
+        "released_at": "2026-04-03T12:00:00.000Z",
+        "description": "Release 30"
+    },
+    {
+        "tag_name": "v0.29.0",
+        "name": "release-cli v0.29.0",
+        "released_at": "2026-04-02T12:00:00.000Z",
+        "description": "Release 29"
+    },
+    {
+        "tag_name": "v0.28.0",
+        "name": "release-cli v0.28.0",
+        "released_at": "2026-04-01T12:00:00.000Z",
+        "description": "Release 28"
+    },
+    {
+        "tag_name": "v0.27.0",
+        "name": "release-cli v0.27.0",
+        "released_at": "2026-04-28T12:00:00.000Z",
+        "description": "Release 27"
+    },
+    {
+        "tag_name": "v0.26.0",
+        "name": "release-cli v0.26.0",
+        "released_at": "2026-04-27T12:00:00.000Z",
+        "description": "Release 26"
+    },
+    {
+        "tag_name": "v0.25.0",
+        "name": "release-cli v0.25.0",
+        "released_at": "2026-04-26T12:00:00.000Z",
+        "description": "Release 25"
+    },
+    {
+        "tag_name": "v0.24.0",
+        "name": "release-cli v0.24.0",
+        "released_at": "2026-04-25T12:00:00.000Z",
+        "description": "Release 24"
+    },
+    {
+        "tag_name": "v0.23.0",
+        "name": "release-cli v0.23.0",
+        "released_at": "2026-04-24T12:00:00.000Z",
+        "description": "Release 23"
+    },
+    {
+        "tag_name": "v0.22.0",
+        "name": "release-cli v0.22.0",
+        "released_at": "2026-04-23T12:00:00.000Z",
+        "description": "Release 22"
+    },
+    {
+        "tag_name": "v0.21.0",
+        "name": "release-cli v0.21.0",
+        "released_at": "2026-04-22T12:00:00.000Z",
+        "description": "Release 21"
+    },
+    {
+        "tag_name": "v0.20.0",
+        "name": "release-cli v0.20.0",
+        "released_at": "2026-04-21T12:00:00.000Z",
+        "description": "Release 20"
+    },
+    {
+        "tag_name": "v0.19.0",
+        "name": "release-cli v0.19.0",
+        "released_at": "2026-04-20T12:00:00.000Z",
+        "description": "Release 19"
+    },
+    {
+        "tag_name": "v0.18.0",
+        "name": "release-cli v0.18.0",
+        "released_at": "2026-04-19T12:00:00.000Z",
+        "description": "Release 18"
+    },
+    {
+        "tag_name": "v0.17.0",
+        "name": "release-cli v0.17.0",
+        "released_at": "2026-04-18T12:00:00.000Z",
+        "description": "Release 17"
+    },
+    {
+        "tag_name": "v0.16.0",
+        "name": "release-cli v0.16.0",
+        "released_at": "2026-04-17T12:00:00.000Z",
+        "description": "Release 16"
+    },
+    {
+        "tag_name": "v0.15.0",
+        "name": "release-cli v0.15.0",
+        "released_at": "2026-04-16T12:00:00.000Z",
+        "description": "Release 15"
+    },
+    {
+        "tag_name": "v0.14.0",
+        "name": "release-cli v0.14.0",
+        "released_at": "2026-04-15T12:00:00.000Z",
+        "description": "Release 14"
+    },
+    {
+        "tag_name": "v0.13.0",
+        "name": "release-cli v0.13.0",
+        "released_at": "2026-04-14T12:00:00.000Z",
+        "description": "Release 13"
+    },
+    {
+        "tag_name": "v0.12.0",
+        "name": "release-cli v0.12.0",
+        "released_at": "2026-04-13T12:00:00.000Z",
+        "description": "Release 12"
+    },
+    {
+        "tag_name": "v0.11.0",
+        "name": "release-cli v0.11.0",
+        "released_at": "2026-04-12T12:00:00.000Z",
+        "description": "Release 11"
+    },
+    {
+        "tag_name": "v0.10.0",
+        "name": "release-cli v0.10.0",
+        "released_at": "2026-04-11T12:00:00.000Z",
+        "description": "Release 10"
+    },
+    {
+        "tag_name": "v0.9.0",
+        "name": "release-cli v0.9.0",
+        "released_at": "2026-04-10T12:00:00.000Z",
+        "description": "Release 9"
+    },
+    {
+        "tag_name": "v0.8.0",
+        "name": "release-cli v0.8.0",
+        "released_at": "2026-04-09T12:00:00.000Z",
+        "description": "Release 8"
+    },
+    {
+        "tag_name": "v0.7.0",
+        "name": "release-cli v0.7.0",
+        "released_at": "2026-04-08T12:00:00.000Z",
+        "description": "Release 7"
+    },
+    {
+        "tag_name": "v0.6.0",
+        "name": "release-cli v0.6.0",
+        "released_at": "2026-04-07T12:00:00.000Z",
+        "description": "Release 6"
+    },
+    {
+        "tag_name": "v0.5.0",
+        "name": "release-cli v0.5.0",
+        "released_at": "2026-04-06T12:00:00.000Z",
+        "description": "Release 5"
+    },
+    {
+        "tag_name": "v0.4.0",
+        "name": "release-cli v0.4.0",
+        "released_at": "2026-04-05T12:00:00.000Z",
+        "description": "Release 4"
+    },
+    {
+        "tag_name": "v0.3.0",
+        "name": "release-cli v0.3.0",
+        "released_at": "2026-04-04T12:00:00.000Z",
+        "description": "Release 3"
+    },
+    {
+        "tag_name": "v0.2.0",
+        "name": "release-cli v0.2.0",
+        "released_at": "2026-04-03T12:00:00.000Z",
+        "description": "Release 2"
+    },
+    {
+        "tag_name": "v0.1.0",
+        "name": "release-cli v0.1.0",
+        "released_at": "2026-04-02T12:00:00.000Z",
+        "description": "Release 1"
+    }
+]

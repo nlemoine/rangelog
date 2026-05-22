@@ -1,0 +1,108 @@
+[
+  {
+    "tag_name": "v0.16.0",
+    "name": "release-cli v0.16.0",
+    "released_at": "2026-04-01T10:00:00.000Z",
+    "description": "## Changes\n- Add support for multi-project pipelines\n- Fix authentication token refresh\n- Update dependency versions",
+    "created_at": "2026-04-01T09:58:00.000Z",
+    "tag_path": "/gitlab-org/release-cli/-/tags/v0.16.0",
+    "released_at_isoformat": "2026-04-01T10:00:00Z",
+    "upcoming_release": false,
+    "author": {
+      "id": 1,
+      "username": "ci-bot",
+      "name": "CI Bot"
+    },
+    "commit": {
+      "id": "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
+      "short_id": "abc123de"
+    },
+    "milestones": [
+      {
+        "id": 42,
+        "title": "0.16"
+      }
+    ],
+    "assets": {
+      "count": 2,
+      "links": [
+        {
+          "id": 1,
+          "name": "release-cli-linux-amd64",
+          "url": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.16.0/downloads/release-cli-linux-amd64"
+        }
+      ],
+      "sources": [
+        {
+          "format": "zip",
+          "url": "https://gitlab.com/gitlab-org/release-cli/-/archive/v0.16.0/release-cli-v0.16.0.zip"
+        }
+      ]
+    },
+    "evidences": [
+      {
+        "sha": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+        "filepath": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.16.0/evidence",
+        "collected_at": "2026-04-01T10:01:00.000Z"
+      }
+    ],
+    "_links": {
+      "self": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.16.0",
+      "merge_requests_url": "https://gitlab.com/gitlab-org/release-cli/-/merge_requests?milestone_title=0.16",
+      "issues_url": "https://gitlab.com/gitlab-org/release-cli/-/issues?milestone_title=0.16"
+    }
+  },
+  {
+    "tag_name": "v0.15.0",
+    "name": "release-cli v0.15.0",
+    "released_at": "2026-02-15T14:30:00.000Z",
+    "description": "## Changes\n- Improve error messages for failed releases\n- Add dry-run mode\n- Fix race condition in concurrent release creation",
+    "created_at": "2026-02-15T14:28:00.000Z",
+    "tag_path": "/gitlab-org/release-cli/-/tags/v0.15.0",
+    "released_at_isoformat": "2026-02-15T14:30:00Z",
+    "upcoming_release": false,
+    "author": {
+      "id": 1,
+      "username": "ci-bot",
+      "name": "CI Bot"
+    },
+    "commit": {
+      "id": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210",
+      "short_id": "fedcba98"
+    },
+    "milestones": [
+      {
+        "id": 41,
+        "title": "0.15"
+      }
+    ],
+    "assets": {
+      "count": 2,
+      "links": [
+        {
+          "id": 2,
+          "name": "release-cli-linux-amd64",
+          "url": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.15.0/downloads/release-cli-linux-amd64"
+        }
+      ],
+      "sources": [
+        {
+          "format": "zip",
+          "url": "https://gitlab.com/gitlab-org/release-cli/-/archive/v0.15.0/release-cli-v0.15.0.zip"
+        }
+      ]
+    },
+    "evidences": [
+      {
+        "sha": "cafebabecafebabecafebabecafebabecafebabe",
+        "filepath": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.15.0/evidence",
+        "collected_at": "2026-02-15T14:31:00.000Z"
+      }
+    ],
+    "_links": {
+      "self": "https://gitlab.com/gitlab-org/release-cli/-/releases/v0.15.0",
+      "merge_requests_url": "https://gitlab.com/gitlab-org/release-cli/-/merge_requests?milestone_title=0.15",
+      "issues_url": "https://gitlab.com/gitlab-org/release-cli/-/issues?milestone_title=0.15"
+    }
+  }
+]

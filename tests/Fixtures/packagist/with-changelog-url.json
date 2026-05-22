@@ -1,0 +1,26 @@
+{
+  "packages": {
+    "symfony/console": [
+      {
+        "name": "symfony/console",
+        "version": "v8.1.0-BETA1",
+        "source": {
+          "url": "https://github.com/symfony/console.git",
+          "type": "git",
+          "reference": "d29223954adbe978d0c59f6f27cfcc1e43048d86"
+        },
+        "dist": {
+          "url": "https://api.github.com/repos/symfony/console/zipball/d29223954adbe978d0c59f6f27cfcc1e43048d86",
+          "type": "zip",
+          "shasum": "",
+          "reference": "d29223954adbe978d0c59f6f27cfcc1e43048d86"
+        },
+        "support": {
+          "source": "https://github.com/symfony/console/tree/v8.1.0-BETA1",
+          "changelog": "https://github.com/symfony/console/blob/main/CHANGELOG.md"
+        },
+        "homepage": "https://symfony.com"
+      }
+    ]
+  }
+}

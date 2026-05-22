@@ -1,0 +1,19 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - tests
+    excludePaths:
+        # pest-plugin-arch's arch()->expect()->classes()->toBeFinal() chain
+        # is a runtime-only DSL that PHPStan cannot follow (arch() returns
+        # TestCall, but ->expect() is dispatched dynamically by Pest's
+        # Architectable concern). Architecture rules are exercised by Pest
+        # itself, not PHPStan. Excluding the file is the standard pattern.
+        - tests/Architecture/ArchTest.php
+    # checkGenericClassInNonGenericObjectType + checkMissingIterableValueType
+    # are removed in PHPStan 2 — both are always-on at level max (≥9).
+    checkMissingCallableSignature: true
+    checkUninitializedProperties: true
+    reportUnmatchedIgnoredErrors: true
+    treatPhpDocTypesAsCertain: false
+    tmpDir: .phpstan-cache

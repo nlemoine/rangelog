@@ -1,0 +1,26 @@
+# Composer
+/vendor
+/composer.lock
+
+# PHPStan / PHP CS Fixer / Rector caches
+/.phpstan-cache/
+/.php-cs-fixer.cache
+/.rector-cache/
+# Per-developer PHPStan override — committed default is phpstan.neon.dist;
+# phpstan.neon is the local override PHPStan auto-discovers when present.
+/phpstan.neon
+
+# Pest / PHPUnit
+/.phpunit.cache/
+/.phpunit.result.cache/
+/coverage/
+/build/
+
+# Local-only env
+.env
+.env.local
+.env.*.local
+
+# Per-developer overrides (allow committing the .dist version)
+/.php-cs-fixer.php
+/phpunit.xml
