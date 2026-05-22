@@ -3,7 +3,13 @@
     "description": "Rangelog — resolve and parse changelog notes for any package across GitHub, WordPress.org, GitLab, and in-repo sources, over a `(from, to)` version range.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["changelog", "composer", "wordpress", "github", "psr-18"],
+    "keywords": [
+        "changelog",
+        "composer",
+        "wordpress",
+        "github",
+        "psr-18"
+    ],
     "authors": [
         {
             "name": "Nicolas Lemoine",
