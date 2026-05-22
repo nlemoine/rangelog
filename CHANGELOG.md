@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/nlemoine/rangelog/compare/1.0.0...1.0.1) (2026-05-22)
+
+
+### Bug Fixes
+
+* **wp:** use flat SVN layout for WordPress.org themes ([3707ea0](https://github.com/nlemoine/rangelog/commit/3707ea061a798f63731a35673aa2f1831bc352b7))
+
 ## 1.0.0 (2026-05-22)
 
 
