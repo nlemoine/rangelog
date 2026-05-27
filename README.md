@@ -221,6 +221,8 @@ $changelog = $libClient->changelog($pkg, '5.0', '5.3');
 echo $libClient->render($changelog);
 ```
 
+Two URL forms are accepted: the human-facing page (`https://wordpress.org/plugins/<slug>/`, also `/themes/<slug>/`) and the canonical SVN source (`https://plugins.svn.wordpress.org/<slug>/`, also `themes.svn.wordpress.org`) — the latter is the composer `source.url` for WordPress.org packages, so a Composer-driven consumer can forward it directly without rewriting it to the page URL.
+
 `WordPressOrgResolver` walks 6 SVN URLs: 3 tag-filename candidates and 3 trunk-filename candidates (`changelog.md`, `CHANGELOG.md`, `readme.txt`). The unauthenticated SVN trunk hit on `plugins.svn.wordpress.org` is the source of truth; the WordPress.org REST API truncates the changelog field at 10 KB, and SVN bypasses that.
 
 Notes: the readme dialect uses `= 1.2.3 =` version headings rendered as `<h4>` in HTML. The `WordPressReadmeParser` reconstructs the per-version segmentation post-parse.

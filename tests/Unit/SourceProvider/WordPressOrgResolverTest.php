@@ -405,3 +405,52 @@ it('resolve() makes zero requests and throws UnsupportedPackageException for the
     expect($caught->getMessage())->toContain('twentytwentyfour');
     expect(count($mockClient->getRequests()))->toBe(0);
 });
+
+// SVN-host support: WordPressOrgResolver also accepts the canonical composer
+// `source.url` form (plugins.svn.wordpress.org / themes.svn.wordpress.org) —
+// the same SVN base the resolver builds internally — so a consumer can pass
+// the composer source URL directly instead of the wordpress.org page URL.
+
+it('supports() returns true for a plugins.svn.wordpress.org source URL (no HTTP)', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    expect($resolver->supports(new Package('wp-plugin/wordpress-seo', 'https://plugins.svn.wordpress.org/wordpress-seo/')))->toBeTrue();
+    expect(count($mockClient->getRequests()))->toBe(0);
+});
+
+it('supports() returns true for a themes.svn.wordpress.org source URL (no HTTP)', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    expect($resolver->supports(new Package('wp-theme/twentytwentyfour', 'https://themes.svn.wordpress.org/twentytwentyfour/')))->toBeTrue();
+    expect(count($mockClient->getRequests()))->toBe(0);
+});
+
+it('supports() returns false for a bare plugins.svn.wordpress.org root (no slug)', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    expect($resolver->supports(new Package('wp-plugin/x', 'https://plugins.svn.wordpress.org/')))->toBeFalse();
+    expect(count($mockClient->getRequests()))->toBe(0);
+});
+
+it('resolve() builds plugin SVN attempts from a plugins.svn.wordpress.org source URL', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    $mockClient->addResponse(new Response(200, [], '# Changelog'));
+
+    $source = $resolver->resolve(
+        new Package('wp-plugin/wordpress-seo', 'https://plugins.svn.wordpress.org/wordpress-seo/'),
+        VersionRange::changes('27.6', '27.7'),
+    );
+
+    expect($source->type)->toBe(SourceTypes::GITHUB_FILE);
+    expect($source->url)->toBe('https://plugins.svn.wordpress.org/wordpress-seo/tags/27.7/changelog.md');
+});
+
+it('resolve() builds flat theme SVN attempts from a themes.svn.wordpress.org source URL', function (): void {
+    [$mockClient, $resolver] = buildWpResolver();
+    $mockClient->addResponse(new Response(200, [], '# Changelog'));
+
+    $source = $resolver->resolve(
+        new Package('wp-theme/twentytwentyfour', 'https://themes.svn.wordpress.org/twentytwentyfour/'),
+        VersionRange::changes('1.0.0', '2.0.0'),
+    );
+
+    expect($source->type)->toBe(SourceTypes::GITHUB_FILE);
+    expect($source->url)->toBe('https://themes.svn.wordpress.org/twentytwentyfour/2.0.0/changelog.md');
+});

@@ -19,10 +19,16 @@ use UnexpectedValueException;
 /**
  * Resolver for WordPress.org-hosted plugins and themes.
  *
- * `supports()` inspects the URL shape — host must equal `wordpress.org`
- * (case-insensitively), path must start with `/plugins/` or `/themes/`,
- * and `extractKindAndSlug()` must return non-null. No HTTP call. WordPress
- * packages are not on Packagist p2.
+ * `supports()` inspects the URL shape via `extractKindAndSlug()` — no HTTP
+ * call. WordPress packages are not on Packagist p2. Two host-insensitive URL
+ * forms are accepted:
+ *  - Human-facing page: host `wordpress.org`, path `/plugins/<slug>` or
+ *    `/themes/<slug>` (kind from the path segment).
+ *  - Canonical SVN source — the composer `source.url` for WordPress.org
+ *    packages: host `plugins.svn.wordpress.org` or `themes.svn.wordpress.org`,
+ *    slug = first path segment (kind from the subdomain). This is the same
+ *    SVN base the resolver builds in `buildAttempts()`, so a consumer can pass
+ *    the composer source URL directly.
  *
  * Path prefix `/plugins/` routes to `plugins.svn.wordpress.org`; path prefix
  * `/themes/` routes to `themes.svn.wordpress.org`. The two SVN layouts are
@@ -84,12 +90,6 @@ final readonly class WordPressOrgResolver implements SourceProviderInterface
 
     public function supports(Package $package): bool
     {
-        $host = parse_url($package->sourceUrl, \PHP_URL_HOST);
-
-        if (! \is_string($host) || strtolower($host) !== 'wordpress.org') {
-            return false;
-        }
-
         return $this->extractKindAndSlug($package->sourceUrl) !== null;
     }
 
@@ -192,14 +192,37 @@ final readonly class WordPressOrgResolver implements SourceProviderInterface
      */
     private function extractKindAndSlug(string $url): ?array
     {
+        $host = parse_url($url, \PHP_URL_HOST);
         $path = parse_url($url, \PHP_URL_PATH);
-        if (! \is_string($path)) {
-            return null;
-        }
-        if (preg_match('#^/(plugins|themes)/([^/]+)#', $path, $m) !== 1) {
+        if (! \is_string($host) || ! \is_string($path)) {
             return null;
         }
 
-        return ['kind' => $m[1], 'slug' => $m[2]];
+        $host = strtolower($host);
+
+        // Human-facing page: wordpress.org/(plugins|themes)/<slug>.
+        if ($host === 'wordpress.org') {
+            if (preg_match('#^/(plugins|themes)/([^/]+)#', $path, $m) !== 1) {
+                return null;
+            }
+
+            return ['kind' => $m[1], 'slug' => $m[2]];
+        }
+
+        // Canonical SVN source — the composer `source.url`:
+        // (plugins|themes).svn.wordpress.org/<slug>. Kind comes from the
+        // subdomain; slug is the first path segment.
+        if ($host === 'plugins.svn.wordpress.org' || $host === 'themes.svn.wordpress.org') {
+            if (preg_match('#^/([^/]+)#', $path, $m) !== 1) {
+                return null;
+            }
+
+            return [
+                'kind' => $host === 'plugins.svn.wordpress.org' ? 'plugins' : 'themes',
+                'slug' => $m[1],
+            ];
+        }
+
+        return null;
     }
 }
