@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/nlemoine/rangelog/compare/1.1.0...1.1.1) (2026-06-01)
+
+
+### Bug Fixes
+
+* **wp:** parse CHANGELOG.md files using readme = Version = headers ([c566758](https://github.com/nlemoine/rangelog/commit/c5667584f5ca2757a01e328d63161dc018a519a4))
+
 ## [1.1.0](https://github.com/nlemoine/rangelog/compare/1.0.1...1.1.0) (2026-05-27)
 
 
