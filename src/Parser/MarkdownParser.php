@@ -35,6 +35,14 @@ use UnexpectedValueException;
  *   Version 1.2.3      (setext H1 with === underline)
  *   =============
  *
+ * Fallback dialect — when the AST walk finds zero ATX/setext headings, a
+ * line-based pass recognises WordPress-readme version headers:
+ *   = 1.2.3 =
+ *   = 1.2.3 - 2026-01-15 =
+ * Some WP plugins ship a CHANGELOG.md (served from wp.org SVN, tagged
+ * GITHUB_FILE → this parser) in that dialect; CommonMark renders `= X =`
+ * lines as paragraphs, so {@see parseWordPressHeaders()} recovers them.
+ *
  * Every entry carries exactly one ChangelogSection with an empty title. The
  * verbatim source between consecutive version headers is captured into the
  * section's lines and into ChangelogEntry::$raw.
@@ -90,6 +98,41 @@ final readonly class MarkdownParser implements ChangelogParserInterface
 
     /** Date metadata fallback for Yoast-style bare-version entries. */
     private const string RELEASE_DATE_META = '/^Release\s+date:\s*(\d{4}-\d{2}-\d{2})\s*$/im';
+
+    /**
+     * WordPress-readme `= X =` sub-header detector (fallback dialect).
+     *
+     * Some WP plugins ship a CHANGELOG.md whose version headers use the readme
+     * `= 1.2.3 =` form. CommonMark renders those as paragraphs, so the AST walk
+     * above finds zero headings; this line-based pass recovers them.
+     *
+     * One `=` per side, with at least one inner whitespace on each side of the
+     * capture (so body literals like `=foo=` never match). Group 1 = inner
+     * content. Mirrors {@see WordPressReadmeParser::CANDIDATE_HEADER}.
+     */
+    private const string WP_CANDIDATE_HEADER = '/^=\s+([^=]+?)\s+=\s*$/';
+
+    /**
+     * WordPress-readme version header with optional inline ISO date.
+     *
+     * Group 1 = cleaned version (no v-prefix), group 2 = optional YYYY-MM-DD.
+     * Anchored, bounded character classes (regex-DoS mitigation). ISO-only
+     * dates, matching this parser's existing markdown date handling.
+     */
+    private const string WP_VERSION_HEADER = '~^
+        =\s*
+        (?:version\s+)?                        # optional "Version " literal
+        v?                                     # optional v prefix
+        ([\d]+(?:\.\d+){1,3}                   # 2-4 component numeric version
+            (?:[-+][\w.\-+]+)?                 # optional pre-release or build metadata
+        )
+        \s*
+        (?:[-\x{2013}(\s]\s*                   # delimiter: dash, en-dash, paren, or whitespace
+            (\d{4}-\d{2}-\d{2})                # ISO date
+            [)\s]*
+        )?
+        \s*=\s*$
+    ~xiu';
 
     private LoggerInterface $logger;
 
@@ -199,6 +242,15 @@ final readonly class MarkdownParser implements ChangelogParserInterface
         }
 
         if ($rawBlocks === []) {
+            // No ATX/setext version headers. Some WP-plugin CHANGELOG.md files
+            // (served from wp.org SVN, tagged GITHUB_FILE) use the readme
+            // `= 1.2.3 =` dialect that CommonMark treats as prose. Fall back to
+            // a line-walk for those before declaring the source unparseable.
+            $wpChangelog = $this->parseWordPressHeaders($bodyLines, $source);
+            if ($wpChangelog instanceof Changelog) {
+                return $wpChangelog;
+            }
+
             throw new ParseException('No version headers found in markdown source');
         }
 
@@ -250,6 +302,101 @@ final readonly class MarkdownParser implements ChangelogParserInterface
                 raw: $raw,
                 sourceUrl: $source,
             );
+        }
+
+        $this->logger->debug(
+            'Parsed {count} entries from {source}',
+            ['count' => \count($entries), 'source' => $source],
+        );
+
+        return new Changelog($entries);
+    }
+
+    /**
+     * Fallback parser for the WordPress-readme `= Version =` header dialect.
+     *
+     * Invoked only when the CommonMark AST walk found zero version headings —
+     * i.e. when this parser would otherwise throw. Walks the source lines,
+     * opening a new block on each `= X =` header and capturing the verbatim
+     * body in between. Lines before the first header (e.g. a `# Changelog`
+     * title) are discarded. Non-semver headers (`= Initial release =`) are
+     * skipped via the VersionParser probe with a debug log, mirroring
+     * {@see WordPressReadmeParser}.
+     *
+     * Returns null when no `= X =` header is present (genuinely headerless
+     * markdown) or when every candidate is non-semver, so the caller throws
+     * the original ParseException.
+     *
+     * @param list<string> $bodyLines
+     */
+    private function parseWordPressHeaders(array $bodyLines, string $source): ?Changelog
+    {
+        /** @var list<array{version: string, date: ?DateTimeImmutable, body: list<string>}> $blocks */
+        $blocks = [];
+        /** @var array{version: string, date: ?DateTimeImmutable, body: list<string>}|null $current */
+        $current = null;
+
+        foreach ($bodyLines as $line) {
+            $cm = [];
+            if (preg_match(self::WP_CANDIDATE_HEADER, $line, $cm) === 1) {
+                if ($current !== null) {
+                    $blocks[] = $current;
+                }
+
+                $version = $cm[1];
+                $date = null;
+
+                $vm = [];
+                if (preg_match(self::WP_VERSION_HEADER, $line, $vm) === 1) {
+                    $version = $vm[1];
+                    if (isset($vm[2])) {
+                        $date = $this->parseIsoDate($vm[2]);
+                    }
+                }
+
+                $current = ['version' => $version, 'date' => $date, 'body' => []];
+
+                continue;
+            }
+
+            if ($current !== null) {
+                $current['body'][] = $line;
+            }
+        }
+
+        if ($current !== null) {
+            $blocks[] = $current;
+        }
+
+        if ($blocks === []) {
+            return null;
+        }
+
+        $entries = [];
+        $versionParser = new VersionParser();
+        foreach ($blocks as $block) {
+            try {
+                $versionParser->normalize($block['version']);
+            } catch (UnexpectedValueException) {
+                $this->logger->debug(
+                    'Skipping non-semver version',
+                    ['version' => $block['version'], 'source' => $source],
+                );
+
+                continue;
+            }
+
+            $entries[] = new ChangelogEntry(
+                version: $block['version'],
+                date: $block['date'],
+                sections: [new ChangelogSection(title: '', lines: $block['body'])],
+                raw: implode("\n", $block['body']),
+                sourceUrl: $source,
+            );
+        }
+
+        if ($entries === []) {
+            return null;
         }
 
         $this->logger->debug(

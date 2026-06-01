@@ -214,6 +214,90 @@ it('parses yoast-changelog-md.md ignoring the setext title block and emitting ba
 });
 
 // ---------------------------------------------------------------------------
+// WordPress-readme `= Version =` header dialect inside a .md file
+//
+// Some WP plugins ship a CHANGELOG.md / changelog.md (served from wp.org SVN
+// and tagged GITHUB_FILE → MarkdownParser) whose version headers use the
+// readme `= 1.2.3 =` form rather than markdown ATX `## 1.2.3`. CommonMark
+// treats those lines as paragraphs, so the AST heading walk finds nothing.
+// MarkdownParser falls back to a line-walk for `= X =` headers before giving up.
+// ---------------------------------------------------------------------------
+
+it('parses a WordPress `= Version =` CHANGELOG.md that CommonMark sees as prose', function (): void {
+    $parser = new MarkdownParser();
+    $changelog = $parser->parse(
+        loadMarkdownFixture('wp-readme-headers.md'),
+        VersionRange::changes('0.0.0', '99.0.0'),
+    );
+
+    $versions = array_map(static fn (ChangelogEntry $e): string => $e->version, $changelog->entries);
+    expect($versions)->toContain('2.4.0');
+    expect($versions)->toContain('2.3.7');
+
+    $byVersion = [];
+    foreach ($changelog->entries as $entry) {
+        $byVersion[$entry->version] = $entry;
+    }
+
+    // Body captured verbatim, no bleed into the adjacent entry, title excluded.
+    expect($byVersion['2.4.0']->raw)->toContain('rewrite exporter and importer');
+    expect($byVersion['2.4.0']->raw)->not->toContain('# Changelog');
+    expect($byVersion['2.4.0']->raw)->not->toContain('= 2.3.7');
+});
+
+it('filters a WordPress `= Version =` CHANGELOG.md to the upgrade window (the koko-analytics bug)', function (): void {
+    $parser = new MarkdownParser();
+    $changelog = $parser->parse(
+        loadMarkdownFixture('wp-readme-headers.md'),
+        VersionRange::changes('2.3.7', '2.4.0'),
+    );
+
+    $filtered = $changelog->filter(VersionRange::changes('2.3.7', '2.4.0'));
+    $versions = array_map(static fn (ChangelogEntry $e): string => $e->version, $filtered->entries);
+
+    expect($versions)->toBe(['2.4.0']);
+});
+
+it('extracts the inline ISO date from a `= 1.2.3 - YYYY-MM-DD =` WordPress header', function (): void {
+    $parser = new MarkdownParser();
+    $changelog = $parser->parse(
+        loadMarkdownFixture('wp-readme-headers.md'),
+        VersionRange::changes('0.0.0', '99.0.0'),
+    );
+
+    $byVersion = [];
+    foreach ($changelog->entries as $entry) {
+        $byVersion[$entry->version] = $entry;
+    }
+
+    expect($byVersion['2.3.7']->date)->toBeInstanceOf(DateTimeImmutable::class);
+    expect($byVersion['2.3.7']->date?->format('Y-m-d'))->toBe('2026-04-01');
+    // The dateless 2.4.0 header yields a null date.
+    expect($byVersion['2.4.0']->date)->toBeNull();
+});
+
+it('skips a non-semver `= Initial release =` WordPress header with a debug log', function (): void {
+    $logger = new ArrayLogger();
+    $parser = new MarkdownParser($logger);
+    $changelog = $parser->parse(
+        loadMarkdownFixture('wp-readme-headers.md', 'https://example.com/CHANGELOG.md'),
+        VersionRange::changes('0.0.0', '99.0.0'),
+    );
+
+    $versions = array_map(static fn (ChangelogEntry $e): string => $e->version, $changelog->entries);
+    expect($versions)->not->toContain('Initial release');
+
+    $skipRecords = array_values(array_filter(
+        $logger->records,
+        static fn (array $r): bool => $r['level'] === 'debug'
+            && str_contains($r['message'], 'Skipping non-semver version'),
+    ));
+    expect($skipRecords)->toHaveCount(1);
+    expect($skipRecords[0]['context']['version'])->toBe('Initial release');
+    expect($skipRecords[0]['context']['source'])->toBe('https://example.com/CHANGELOG.md');
+});
+
+// ---------------------------------------------------------------------------
 // Non-semver versions silently skipped, logged at debug level
 // ---------------------------------------------------------------------------
 
