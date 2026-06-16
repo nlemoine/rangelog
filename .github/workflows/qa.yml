@@ -1,0 +1,21 @@
+name: QA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qa:
+    uses: nlemoine/.github/.github/workflows/php-qa.yml@5a92d19b83b7b98b52e7a9b3b1ae2402c5635463
+    with:
+      cs-tool: php-cs-fixer
+      type-coverage: true
+      type-coverage-min: '95'
+    secrets: inherit
