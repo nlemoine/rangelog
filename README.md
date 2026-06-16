@@ -3,7 +3,7 @@
 A PHP library that, given a `(name, sourceUrl)` pair and a version range, returns structured changelog notes. Sources covered: GitHub Releases, in-repo `CHANGELOG.md` files, WordPress.org plugin readmes, GitLab Releases, the GitLab repository file API, and any accessible markdown URL.
 
 [![Packagist Version](https://img.shields.io/packagist/v/n5s/rangelog.svg)](https://packagist.org/packages/n5s/rangelog)
-[![CI](https://github.com/nlemoine/rangelog/actions/workflows/ci.yml/badge.svg)](https://github.com/nlemoine/rangelog/actions/workflows/ci.yml)
+[![QA](https://github.com/nlemoine/rangelog/actions/workflows/qa.yml/badge.svg)](https://github.com/nlemoine/rangelog/actions/workflows/qa.yml)
 [![codecov](https://codecov.io/gh/nlemoine/rangelog/graph/badge.svg)](https://codecov.io/gh/nlemoine/rangelog)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
