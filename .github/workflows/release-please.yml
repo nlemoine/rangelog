@@ -2,10 +2,11 @@ name: Release Please
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
-permissions: {}
+permissions:
+  contents: write
+  pull-requests: write
 
 concurrency:
   group: release-please-${{ github.ref }}
@@ -13,15 +14,4 @@ concurrency:
 
 jobs:
   release-please:
-    name: Release Please
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - name: Run release-please
-        uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
-        with:
-          config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
+    uses: nlemoine/.github/.github/workflows/release-please.yml@f0bc978711a8fd8c7a2ea4ff1eed581b5eb4df8b
