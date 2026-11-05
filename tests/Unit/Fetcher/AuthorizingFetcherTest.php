@@ -13,6 +13,7 @@ use n5s\Rangelog\Fetcher\FetcherInterface;
 use n5s\Rangelog\Tests\TestSupport\ArrayLogger;
 use n5s\Rangelog\Tests\TestSupport\RecordingFetcher;
 use ReflectionClass;
+use ReflectionMethod;
 use ReflectionNamedType;
 
 // ---------------------------------------------------------------------------
@@ -32,7 +33,7 @@ it('requires CredentialProviderInterface in the constructor (no default)', funct
     $constructor = $reflection->getConstructor();
     expect($constructor)->not->toBeNull();
 
-    if ($constructor === null) {
+    if (!$constructor instanceof ReflectionMethod) {
         return;
     }
 

@@ -29,7 +29,7 @@ it('has a private constructor (cannot be instantiated)', function (): void {
     $reflection = new ReflectionClass(SourceTypes::class);
     $ctor = $reflection->getConstructor();
     expect($ctor)->toBeInstanceOf(ReflectionMethod::class);
-    if ($ctor === null) {
+    if (!$ctor instanceof ReflectionMethod) {
         // expect() above already failed; this guard is for static analysis
         return;
     }

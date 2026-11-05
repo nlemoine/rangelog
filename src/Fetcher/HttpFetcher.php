@@ -181,7 +181,6 @@ final readonly class HttpFetcher implements FetcherInterface
             throw new RateLimitedException(
                 message: "Rate limited: HTTP 429 from {$source->url}",
                 code: 0,
-                previous: null,
                 retryAfter: $retryAfter,
                 rateLimitReset: $rateLimitReset,
             );
@@ -191,7 +190,6 @@ final readonly class HttpFetcher implements FetcherInterface
         throw new FetchException(
             message: "HTTP {$status} from {$source->url}",
             code: 0,
-            previous: null,
             statusCode: $status,
             bodyExcerpt: mb_strcut($body, 0, self::BODY_EXCERPT_BYTE_LIMIT, 'UTF-8'),
         );
