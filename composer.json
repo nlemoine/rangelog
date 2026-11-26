@@ -16,6 +16,12 @@
             "email": "nico@n5s.dev"
         }
     ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/nlemoine"
+        }
+    ],
     "require": {
         "php": "^8.3 || ^8.4 || ^8.5",
         "composer/semver": "^3.4",
