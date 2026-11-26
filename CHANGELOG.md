@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/nlemoine/rangelog/compare/1.1.1...1.1.2) (2026-11-26)
+
+
+### Miscellaneous Chores
+
+* add GitHub Sponsors to composer funding ([92c9fbe](https://github.com/nlemoine/rangelog/commit/92c9fbe09b45bb6ad59b4d35eed287a403738472))
+
 ## [1.1.1](https://github.com/nlemoine/rangelog/compare/1.1.0...1.1.1) (2026-06-01)
 
 
